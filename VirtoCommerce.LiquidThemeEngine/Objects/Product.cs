@@ -1,6 +1,6 @@
-using DotLiquid;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using DotLiquid;
 using VirtoCommerce.Storefront.Model.Common;
 
 namespace VirtoCommerce.LiquidThemeEngine.Objects
@@ -135,6 +135,9 @@ namespace VirtoCommerce.LiquidThemeEngine.Objects
         /// </summary>
         [DataMember]
         public Image[] Images { get; set; }
+
+        [DataMember]
+        public CustomerReview[] CustomerReviews { get; set; }
 
         public MetaFieldNamespacesCollection Metafields { get; set; }
 
